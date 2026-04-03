@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Model S | Édition Prior Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loader">
+        <div class="loader-content">
+            <h1 class="loader-title">TESLA</h1>
+            <div class="progress-wrapper">
+                <div id="progress-bar"></div>
+            </div>
+            <p id="loader-status">Initialisation de l'environnement 3D...</p>
+        </div>
+    </div>
+
+    <div class="scroll-indicator">
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+        <p>Faites défiler pour explorer</p>
+    </div>
+
+    <nav>
+        <div class="logo">TESLA</div>
+        <div class="nav-links">
+            <a href="#hero">Aperçu</a>
+            <a href="#features">Caractéristiques</a>
+            <a href="#specs">Spécifications</a>
+            <a href="#customizer" class="cta-btn">Commander</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="section">
+            <div class="hero-content">
+                <h1 class="reveal-text">Model S</h1>
+                <h2 class="reveal-text">Prior Design</h2>
+                <p class="reveal-text">L'excellence aérodynamique rencontre la puissance électrique. Redéfinie par l'ingénierie allemande.</p>
+            </div>
+        </section>
+
+        <section id="features" class="section">
+            <div class="feature-card left">
+                <h3>Kit PD-S1000</h3>
+                <p>Pack aérodynamique large en Dura-Flex FRP pour une stabilité inégalée et une posture agressive. Comprend un spoiler avant, des jupes latérales et un diffuseur arrière.</p>
+            </div>
+            <div class="feature-card right">
+                <h3>Jantes Vossen</h3>
+                <p>Équipée de jantes forgées Vossen personnalisées de 21 pouces, spécialement conçues pour supporter le couple massif du groupe motopropulseur Plaid tout en conservant un profil élégant.</p>
+            </div>
+        </section>
+
+        <section id="specs" class="section">
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <span class="spec-value">1 020 ch</span>
+                    <span class="spec-label">Puissance Max</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-value">322 km/h</span>
+                    <span class="spec-label">Vitesse Max</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-value">2,1s</span>
+                    <span class="spec-label">0-100 km/h</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="customizer" class="section">
+            <div class="customizer-ui">
+                <h3>Peignez votre vision</h3>
+                <p>Choisissez votre finition Prior Design personnalisée. Chaque couleur est appliquée avec un revêtement céramique multicouche pour une protection ultime.</p>
+                <div class="color-options">
+                    <button class="color-btn active" style="background: #0a0a0a;" data-color="#0a0a0a" aria-label="Noir"></button>
+                    <button class="color-btn" style="background: #c0c0c0;" data-color="#c0c0c0" aria-label="Argent"></button>
+                    <button class="color-btn" style="background: #cc0000;" data-color="#cc0000" aria-label="Rouge"></button>
+                    <button class="color-btn" style="background: #0033cc;" data-color="#0033cc" aria-label="Bleu"></button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="footer-content">
+                <h2>Projet conçu par <strong>Mike Dev</strong></h2>
+                <p>Création d'expériences web immersives et solutions digitales sur mesure.</p>
+                <div class="footer-links">
+                    <a href="https://www.mikedevsolution.com/" target="_blank" class="cta-btn">Portfolio</a>
+                    <a href="https://wa.me/237695617038?text=Bonjour%20Mike,%20je%20vous%20contacte%20depuis%20votre%20superbe%20projet%20Tesla%203D." target="_blank" class="cta-btn whatsapp-btn">WhatsApp</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <canvas id="webgl"></canvas>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
